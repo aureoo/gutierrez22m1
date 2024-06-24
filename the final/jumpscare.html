@@ -1,0 +1,226 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THIS IS A JUMPSCARE</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <body style="background-image: url('bf2.png');">
+    <style>
+         * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: black;
+            padding: 1px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+	
+        nav {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            
+        }
+  
+        ul {
+            list-style: none;
+            background: black;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul li {
+            display: inline-block;
+            position: relative;
+        }
+
+        ul li a {
+            display: block;
+            padding: 10px 15px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        ul li ul.dropdown li {
+            display: block;
+        }
+
+        ul li ul.dropdown {
+            min-width: 200px;
+            background: black;
+            position: absolute;
+            z-index: 999;
+            display: none;
+            text-align: left;
+	        border-radius: 0 0 8px 8px; 
+
+        }
+
+        ul li ul.dropdown li a {
+            padding: 15px 20px;
+            white-space: nowrap;
+	        padding: 15px 20px; 
+  	    font-size: 25px;
+        }
+
+        ul li a:hover {
+            background: whitesmoke;
+   	        color: black;
+	        border-radius: 8px 8px 0 0;
+        }
+
+        ul li:hover ul.dropdown {
+            display: block;
+	    color: black;
+        }
+
+        #searchbar {
+            margin-left: auto;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #searchbar form {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        #searchbar input[type="text"] {
+            padding: 5px 40px 5px 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #icons {
+            display: flex;
+        }
+
+        #icons li {
+            display: inline-block;
+        }
+
+        #icons li a {
+            display: block;
+            padding: 10px 15px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        #logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: auto; 
+            height: 100px; 
+        }
+        
+        
+        footer{
+            background: black;
+            padding: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        footer .col{
+            color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        footer .logofoot{
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">APPAREL</a>
+                    <ul class="dropdown">
+                        <li><a href="men.html">MEN</a></li>
+                        <li><a href="women.html">WOMEN</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">ACCESSORIES</a>
+                    <ul class="dropdown">
+                        <li><a href="rifles.html">RIFLES</a></li>
+                        <li><a href="handguns.html">HANDGUNS</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">•••</a>
+                    <ul class="dropdown">
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="jumpscare.html">CLICK HERE FOR 99% discount</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+        </nav>
+        <div id="searchbar">
+            <form>
+                <input type="text" placeholder="Search...">
+            </form>
+        </div>
+        <ul id="icons">
+            <li><a href="#"><i class='bx bx-cart'></i></a></li>
+            <li><a href="#"><i class='bx bxs-user-circle'></i></a></li>
+        </ul>
+    </header>
+        <a href="homepage.html"><img id="logo" src="chozen.png" alt="CHO ZEN logo"></a>
+
+        
+
+
+
+
+    <footer class="footsection">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>Imus City, Cavite</p>
+            <p><strong>Phone:</strong>09396449925</p>
+            <p><strong>Hours:</strong>10:00-23:00, Mon-Fri</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <p>Facebook.com/<strong>CHO ZEN</strong></p>
+                <p>Credits: Gutierrez Adam</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+
+        <div class="col">
+            <h4>My account</h4>
+            <a href="login.html">Log in</a>
+            <a href="register.html">Sign up</a>
+        </div>
+    </footer>
+</body>
+</html>

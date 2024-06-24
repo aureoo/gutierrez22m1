@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    background: black;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    min-width: 200px;
+    background: black;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    text-align: left;
+    border-radius: 0 0 8px 8px; 
+}
+
+ul li ul.dropdown li a {
+    padding: 15px 20px;
+    white-space: nowrap;
+    padding: 15px 20px; 
+    font-size: 25px;
+}
+
+ul li a:hover {
+    background: whitesmoke;
+    color: black;
+    border-radius: 8px 8px 0 0;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+    color: black;
+}
+
+#searchbar {
+    margin-left: auto;
+}
+
+#searchbar form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#searchbar input[type="text"] {
+    padding: 5px 40px 5px 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#logo {
+    display: block;
+    margin: 6px 1230px 0;  
+    width: 150px;
+    height: auto;
+}
+
+.slideshow {
+    width: 1000px;
+    height: 600px;
+    margin: 25px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: opacity 1s ease;
+    border: 3px solid black; 
+    box-sizing: border-box; 
+}
+
+.slideshow input[type="radio"] {
+    display: none;
+}
+
+.slideshow .navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    z-index: 10;
+}
+
+.slideshow .navigation label {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 0 5px;
+}
+
+.slideshow .navigation label:hover {
+    background: whitesmoke;
+}
+
+.slideshow input[type="radio"]:checked + img {
+    opacity: 1;
+}
+
+.slideshow img {
+    opacity: 0;
+}
+
+.slideshow #slide1:checked ~ .navigation label[for="slide1"],
+.slideshow #slide2:checked ~ .navigation label[for="slide2"] {
+    background: black;
+}
+
+footer {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+body {
+    overflow-y: auto; 
+    height: 150vh; 
+}
+
+.slideshow-text {
+    text-align: center;
+    margin-top: 20px;
+    color: #0b0600;
+    font-size: 1.64706em;
+    line-height: 1.3;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+.product-wrapper {
+    text-align: center;
+    max-width: 1600px;
+    max-height: 1200px;
+    margin: 25px auto; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-wrapper img {
+    border-radius: 30px;
+    max-width: 400px;
+    max-height: 800px;
+    margin: 15px 5px 20px 5px;
+    border: 1px solid black; 
+    box-sizing: border-box;
+}
+
+.product-description {
+    color: #0b0600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Mont Bold, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 1px 20px 10px 35px;
+    max-width: 310px;
+    max-height: 200px;
+    text-align: center;
+}
